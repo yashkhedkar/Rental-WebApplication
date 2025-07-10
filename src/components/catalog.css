@@ -1,0 +1,126 @@
+
+.catalog-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;  
+}
+
+.drawer-container {
+  margin-top: 64px; 
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 64px); 
+  width: 100%;
+}
+
+.catalog-content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Carousel Styles */
+.catalog-carousel {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.catalog-carousel img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Grid */
+.catalog-grid {
+  width: 100%;
+  padding: 20px;
+}
+
+.catalog-card {
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.catalog-card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive styles for smaller devices */
+@media (max-width: 768px) {
+  .catalog-carousel {
+    width: 100%;
+  }
+
+  .catalog-carousel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .catalog-content {
+    padding: 10px;
+  }
+}
+
+.catalog-root {
+  padding-top: 64px; 
+}
+
+.catalog-content {
+  padding: 16px; 
+}
+
+.catalog-grid {
+  margin-top: 16px;
+}
+
+.catalog-card {
+  text-align: center; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.catalog-carousel {
+  margin-bottom: 16px; 
+}
+
+/* Optional: Responsive styles */
+@media (max-width: 600px) {
+  .catalog-card {
+    margin-bottom: 16px; 
+  }
+}
+
+.catalog-card {
+  text-align: center; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 16px; 
+}
+
+.catalog-grid {
+  margin-top: 16px; 
+}
+
+.catalog-carousel img {
+  width: 80%;
+  height: auto; 
+  max-height: 500px; 
+  margin: 0 auto; 
+}
+
+
+.catalog-card {
+  border: 2px solid #3f51b5; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s; 
+}
+
+.catalog-card:hover {
+  transform: scale(1.05);
+}
