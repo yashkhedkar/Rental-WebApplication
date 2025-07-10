@@ -1,23 +1,23 @@
-
-
 {
   "compilerOptions": {
     "jsx": "react",
-    "target": "ES6",
     "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
     "outDir": "./dist",
-    "rootDir": "./src"
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
-
-  // "files": [],
-  // "references": [
-  //   { "path": "./tsconfig.app.json" },
-  //   { "path": "./tsconfig.node.json" }
-  // ]
+    "baseUrl": "./",
+    "incremental": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+  }
 }
-
